@@ -47,25 +47,36 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand"><img src="images/favicon.ico"></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
+                <div class="navbar-nav ml-auto">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
                     <a href="script.html" class="nav-item nav-link active">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </div>
-                <div class="navbar-nav ml-auto">
+
+
                     <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
@@ -92,7 +103,8 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-3" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-3" style="background-color:yellow;"><input type="button" onclick="scrollWindow()"
+                        value="Scroll" /></div>
                 <div class="col-sm-3" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
                 <div class="col-sm-3" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
                 <div class="col-sm-3" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
@@ -112,7 +124,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-6" style="background-color:yellow;"><input type="button" onclick="scrollWindow()"
+                        value="Scroll" /></div>
                 <div class="col-sm-6" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
 
             </div>
@@ -128,6 +141,333 @@
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
+
+    <header class="header">
+        <img src="./assets/mlk_header.jpg">
+    </header>
+
+    <body id="top">
+
+
+        <div class="ad" id="dfp-ad-5" data-google-query-id="CIj1w--o0fACFQ7DwAodQkYOCQ">
+            <script>
+                (function () {
+                    var scripts = document.getElementsByTagName("script");
+                    var here = scripts[scripts.length - 1];
+                    var div = here.parentElement;
+                    var id = div.id;
+                    if (!id) {
+                        //generate an ID if none exists
+                        id = div.id = "dfp-ad-" + scripts.length;
+                    }
+                    var type = "banner";
+                    var tag = window.googletag;
+
+                    tag.cmd.push(function () {
+
+                        var options = tag.seatimes.presets[type] || tag.seatimes.presets.square;
+                        var ad = tag.defineSlot(tag.seatimes.unit, options.sizes, id);
+                        if (options.sizeMapping) {
+                            var map = tag.sizeMapping();
+                            for (var width in options.sizeMapping) {
+                                map.addSize([width * 1, 1], options.sizeMapping[width]);
+                            }
+                            var mapping = map.build();
+                            ad.defineSizeMapping(mapping);
+                        }
+                        ad.setTargeting("pos", options.position);
+                        ad.addService(tag.pubads());
+                        tag.enableServices();
+                        tag.display(id);
+
+                    });
+
+                })();
+            </script>
+            <div id="google_ads_iframe_/81279359/seattletimes.com_0__container__"
+                style="border: 0pt none; width: 728px; height: 90px;"></div>
+        </div>
+
+        <nav class="top-nav inner">
+            <ul>
+                <li class="logo-container nav-button">
+                    <a href="http://www.seattletimes.com" target="_blank"><img class="logo"
+                            src="./assets/st-logo.png"></a>
+                </li>
+
+
+                <li class="nav-button"><a class="current" href="./index.html">Home</a></li>
+
+                <li class="nav-button"><a class="" href="./bio.html">History</a></li>
+
+                <li class="nav-button"><a class="" href="./archives.html">Perspectives</a></li>
+
+                <li class="nav-button"><a class="" href="./education.html">Education</a></li>
+
+            </ul>
+        </nav>
+
+        <header class="header">
+            <img src="./assets/mlk_header.jpg">
+        </header>
+
+        <main class="index">
+
+            <div class="intro">
+                <div class="inner">
+                    <p>Martin Luther King Jr. lived an extraordinary life. At 33, he was pressing the case of civil
+                        rights with President John Kennedy. At 34, he galvanized the nation with his "I Have a Dream"
+                        speech. At 35, he won the Nobel Peace Prize. At 39, he was assassinated, but he left a legacy of
+                        hope and inspiration that continues today.
+
+                    </p>
+                    <p>In 1996, <em>The Seattle Times</em> created a <a class="old-link"
+                            href="http://old.seattletimes.com/special/mlk/">web page in tribute</a> to Dr. King,
+                        collecting the story of his life, photographs of the times in which he lived, and perspectives
+                        from politicians, activists, and ordinary citizens on his tremendous legacy. Now, 20 years
+                        later, we have created an updated home for that tribute. We hope it will continue to be useful
+                        for readers in the years to come.
+                    </p>
+                </div>
+            </div>
+
+            <div class="triplets">
+                <div class="triplet">
+                    <a href="./bio.html#life"><img src="./assets/triplet1.jpg"></a>
+                    <h2><a href="./bio.html#life">Biography</a></h2>
+                    <div class="desc">King, and his policy of nonviolence, was the dominant force in the civil-rights
+                        movement</div>
+                </div>
+                <div class="triplet">
+                    <a href="./bio.html#words"><img src="./assets/triplet3.jpg"></a>
+                    <h2><a href="./bio.html#words">His words</a></h2>
+                    <div class="desc">A selection of King's speeches, sermons and letters, including his "I Have a
+                        Dream" speech</div>
+                </div>
+                <div class="triplet">
+                    <a href="./bio.html#galleries"><img src="./assets/gallery1.jpg"></a>
+                    <h2><a href="./bio.html#galleries">Galleries</a></h2>
+                    <div class="desc">Take a look back at King's life through three collections of photographs</div>
+                </div>
+            </div>
+
+            <blockquote class="quote">
+                <div class="inner">
+                    <em>"I have a dream that my four little children will one day live in a nation where they will not
+                        be judged by the color of their skin, but by the content of their character."</em>
+
+                    <div class="attribution">Martin Luther King Jr., Lincoln Memorial, Washington D.C., August 28, 1963
+                    </div>
+                </div>
+            </blockquote>
+
+            <div class="body">
+                <div class="inner">
+                    <div class="flex-container">
+                        <div class="double">
+                            <div class="triplet">
+                                <a href="./archives.html"><img src="./assets/perspectives.jpg"></a>
+                                <h2><a href="./archives.html">Local perspectives</a></h2>
+                                <div class="desc">Viewpoints on King's legacy, both past and present</div>
+                            </div>
+                        </div>
+                        <div class="single vbox">
+                            <div class="triplet">
+                                <a href="./bio.html#timeline"><img src="./assets/gallery2.jpg"></a>
+                                <h2><a href="./bio.html#timeline">Timeline</a></h2>
+                                <div class="desc">See how key events in King's life connect with those of the
+                                    civil-rights movement</div>
+                            </div>
+                            <div class="triplet no-pic">
+                                <h2><a href="./education.html#quiz">Civil rights quiz</a></h2>
+                                <div class="desc">Test your knowledge about civil rights</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="single top triplet no-pic">
+                            <h2><a href="./education.html#lesson-plan">Lesson plan</a></h2>
+                            <div class="desc">A variety of activities that look at King’s philosophy</div>
+                        </div>
+                        <div class="single triplet no-pic">
+                            <h2><a href="./education.html#study-guide">Study guide</a></h2>
+                            <div class="desc">Exercises to prompt further discussion about King's life and legacy</div>
+                        </div>
+                        <div class="single triplet no-pic">
+                            <h2><a href="./education.html#resources">Resources</a></h2>
+                            <div class="desc">More resources for learning about Martin Luther King Jr.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thin-div">
+                <div class="center">Don't Miss</div>
+            </div>
+
+            <div class="dont-miss">
+                <div class="story">
+                    <div class="padded">
+                        <a target="_blank"
+                            href="https://www.seattletimes.com/pacific-nw-magazine/black-like-me-its-time-for-a-deeper-conversation-about-race-in-america//">
+                            <img src="./assets/teasers/black_like_me.jpg">
+                        </a>
+                        <div class="small">Pacific NW</div>
+                        <a target="_blank"
+                            href="https://www.seattletimes.com/pacific-nw-magazine/black-like-me-its-time-for-a-deeper-conversation-about-race-in-america//">
+                            <div>Black like me</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="padded">
+                        <a target="_blank" href="http://projects.seattletimes.com/2016/under-our-skin/">
+                            <img src="./assets/teasers/uos.jpg">
+                        </a>
+                        <div class="small">Diversity and inclusion</div>
+                        <a target="_blank" href="http://projects.seattletimes.com/2016/under-our-skin/">
+                            <div>Under Our Skin: What do we mean when we talk about race</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="padded">
+                        <a target="_blank"
+                            href="https://www.seattletimes.com/pacific-nw-magazine/sometimes-the-best-way-to-speak-our-minds-is-to-hold-up-a-sign/">
+                            <img src="./assets/teasers/signs.jpg">
+                        </a>
+                        <div class="small">Pacific NW</div>
+                        <a target="_blank"
+                            href="https://www.seattletimes.com/pacific-nw-magazine/sometimes-the-best-way-to-speak-our-minds-is-to-hold-up-a-sign/">
+                            <div>Sometimes the best way to speak our minds is to hold up a sign</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="story">
+                    <div class="padded">
+                        <a target="_blank" href="http://nie.seattletimes.com/">
+                            <img src="./assets/teasers/dontmiss4.jpg">
+                        </a>
+                        <div class="small">Learning tools</div>
+                        <a target="_blank" href="http://nie.seattletimes.com/">
+                            <div>Newspapers in Education</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="copyright">Copyright 2017 The Seattle Times</div>
+        <div class="footer">
+            <div class="nav-bottom">
+                <a href="http://www.seattletimes.com" target="_blank"><img class="logo" src="./assets/st-logo.png"></a>
+                <a class="share bottom sharer-0" style="display: block;"><label
+                        class="entypo-export"><span>Share</span></label>
+                    <div class="social load top left networks-5">
+                        <ul>
+                            <li class="entypo-pinterest" data-network="pinterest"></li>
+                            <li class="entypo-twitter" data-network="twitter"></li>
+                            <li class="entypo-facebook" data-network="facebook"></li>
+                            <li class="entypo-gplus" data-network="google_plus"></li>
+                            <li class="entypo-paper-plane" data-network="email"></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src="app.js" async=""></script>
+
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-52488759-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Chartbeat bottom -->
+        <script>
+            var _sf_async_config = {
+                uid: 22565,
+                domain: "seattletimes.com",
+                useCanonical: "true",
+                sections: "",
+                authors: "By Seattle Times staff"
+            };
+            (function () {
+                function loadChartbeat() {
+                    window._sf_endpt = (new Date()).getTime();
+                    var e = document.createElement('script');
+                    e.setAttribute('language', 'javascript');
+                    e.setAttribute('type', 'text/javascript');
+                    e.setAttribute('src',
+                        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js");
+                    document.body.appendChild(e);
+                }
+                var oldonload = window.onload;
+                window.onload = (typeof window.onload != 'function') ? loadChartbeat : function () { oldonload(); loadChartbeat(); };
+            })();
+        </script>
+
+        <script>
+
+            if (!localStorage.getItem("noBanner") && console && console.log) (function () {
+                /*
+                      #######     /###           / 
+                    /       ###  /  ############/  
+                   /         ## /     #########    
+                   ##        #  #     /  #         
+                    ###          ##  /  ##         
+                   ## ###           /  ###         
+                    ### ###        ##   ##         
+                      ### ###      ##   ##         
+                        ### /##    ##   ##         
+                          #/ /##   ##   ##         
+                           #/ ##    ##  ##         
+                            # /      ## #      /   
+                  /##        /        ###     /    
+                 /  ########/          ######/     
+                /     #####              ###       
+                |                                  
+                 \)                           
+                
+                Hello! Welcome to a Seattle Times project! Interested in how we built this and
+                other news apps? Check out our dev blog:
+                
+                http://dev.seattletimes.com
+                
+                Want to be a part of a team working on innovative digital journalism in
+                beautiful downtown Seattle? Of course you do. We're hiring, so take a look at
+                our current open positions:
+                
+                http://company.seattletimes.com/careers/
+                
+                */
+            })
+                .toString()
+                .replace(/^[\w\W]*\/\*|\n\*\/[\w\W]*$/gm, "")
+                .split("$")
+                .forEach(function (line) { console.info(line) });
+
+        </script>
+
+        <script type="text/javascript"
+            src="https:////projects.seattletimes.com/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
+
+
+        <script language="javascript" type="text/javascript"
+            src="https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js"></script>
+    </body>
 </body>
 
 </html>
