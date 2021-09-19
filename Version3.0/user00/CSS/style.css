@@ -9,6 +9,7 @@ table {
 }
 
 tr {
+
 	border: 1px solid #ffffff;
 	text-align: center;
 	background-color: #9FB6CD;
@@ -20,14 +21,10 @@ th {
 	background-color: #003366;
 }
 
-td {
-	color: lightgoldenrodyellow;
+td{
+	color:aqua;
 }
 
-ul {
-	color: magenta;
-}
-
-ol {
-	background-color: lightsalmon;
+body{
+	background-image: url("../images/background-music.jpeg");
 }
